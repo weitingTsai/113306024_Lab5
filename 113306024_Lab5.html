@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 成績計算器</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #000;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tfoot td {
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lab 5 成績計算器</h1>
+  <input type="number" id="mathGrade" placeholder="Math">
+  <input type="number" id="englishGrade" placeholder="English">
+  <button id="submitBtn">Submit</button>
+  
+  <table id="gradesTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Math</th>
+        <th>English</th>
+        <th>Average</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <td>Average</td>
+        <td id="mathAvg">-</td>
+        <td id="englishAvg">-</td>
+        <td id="overallAvg">-</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="113306024_Lab5.js"></script>
+</body>
+</html>
